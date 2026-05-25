@@ -50,7 +50,8 @@ import javax.annotation.Nullable;
 public final class PathPackageLocator {
   private static final String WORKSPACE_WILDCARD = "%workspace%";
 
-  private final ImmutableList<Root> pathEntries;
+  private final ImmutableList<Root> 
+  pathEntries;
 
   // Transient because this is an injected value in Skyframe, and as such, its serialized
   // representation is used as a key. We want a change to output base not to invalidate things.
