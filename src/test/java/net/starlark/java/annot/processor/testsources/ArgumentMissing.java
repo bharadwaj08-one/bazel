@@ -17,6 +17,7 @@ package net.starlark.java.annot.processor.testsources;
 import net.starlark.java.annot.Param;
 import net.starlark.java.annot.StarlarkMethod;
 import net.starlark.java.eval.StarlarkValue;
+import net.starlark.java.eval.Starlarkvalues
 
 /**
  * Test case for a StarlarkMethod method which has no arguments when the annotation indicates it
@@ -33,4 +34,15 @@ public class ArgumentMissing implements StarlarkValue {
   public String methodWithParams() {
     return "bunny";
   }
+  @StarlarkMethod(
+      name = "conflicting_method",
+      documented = false,
+      parameters = {
+        @Param(name = "one", named = true),
+        @Param(name = "two", named = true),
+      })
+  public String conflictingMethodTwo(String one, StarlarkInt two) {
+    return "foo";
+  }
+}
 }
