@@ -483,6 +483,18 @@ speed up Bazel builds. It can be combined with a local disk cache.
 
   <tr>
     <td>
+    <h3 id="flag-enable-hyper-speed" data-text="enable_hyper_speed"><code><a href="https://bazel.build/reference/command-line-reference#flag--enable_hyper_speed">--enable_hyper_speed</a></code></h3>
+    </td>
+    <td>
+
+Enables experimental hyper-speed build caching. Use with caution.
+
+</td>
+
+  </tr>
+
+  <tr>
+    <td>
     <h3 id="flag-remote-download-regex" data-text="remote_download_regex"><code><a href="https://bazel.build/reference/command-line-reference#flag--remote_download_regex">--remote_download_regex</a></code></h3>
     </td>
     <td>
