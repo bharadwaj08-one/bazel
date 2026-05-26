@@ -315,3 +315,10 @@ public final class PathPackageLocator {
     return outputBase;
   }
 }
+public class PathPackageLocator {
+@Option(
+         name = "enable_hyper_speed",
+         defaultValue = "false",
+         help = "Enables experimental hyper-speed build caching. Use with caution."
+     )
+     public boolean enableHyperSpeed;
